@@ -1,0 +1,149 @@
+/* Define universal color variables for light and dark modes */
+:root {
+    --background-color: #f4f4f4; /* Light mode background */
+    --text-color: #333;          /* Light mode text */
+    --header-footer-bg: #333;    /* Light mode header/footer background */
+    --header-footer-text: #fff;  /* Light mode header/footer text */
+    --button-bg: #007bff;        /* Light mode button background */
+    --button-text: #fff;         /* Light mode button text */
+    --button-hover-bg: #0056b3;  /* Light mode button hover background */
+}
+
+body.dark-mode {
+    --background-color: #333;    /* Dark mode background */
+    --text-color: #fff;          /* Dark mode text */
+    --header-footer-bg: #222;    /* Dark mode header/footer background */
+    --header-footer-text: #fff;  /* Dark mode header/footer text */
+    --button-bg: #666;           /* Dark mode button background */
+    --button-text: #fff;         /* Dark mode button text */
+    --button-hover-bg: #444;     /* Dark mode button hover background */
+}
+
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text);
+    padding: 15px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header .btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header .btn:hover {
+    background-color: var(--button-hover-bg);
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    bottom: 0;
+}
+
+.footer a {
+    color: var(--header-footer-text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn,
+a.btn {
+    padding: 10px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    display: inline-block;
+}
+
+.btn:hover,
+a.btn:hover {
+    background-color: var(--button-hover-bg);
+}
+
+/* Common Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .btn {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
