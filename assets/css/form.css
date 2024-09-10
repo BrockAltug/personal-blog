@@ -1,0 +1,78 @@
+/* Form Page Specific Styles */
+
+/* Body Flexbox Styles to Center Content */
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Minimum height to cover full viewport */
+    margin: 0; /* Remove default margin */
+}
+
+/* Main Content Styles */
+.main-content {
+    width: 90%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    margin: auto; /* Center horizontally */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form content horizontally */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%; /* Make form groups take full width */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; /* Align labels to the left for readability */
+    width: 100%;
+}
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+/* Dark Mode Styles Specific to Form Page */
+body.dark-mode .main-content {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode textarea {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+}
+
+body.dark-mode input[type="text"]:focus,
+body.dark-mode textarea:focus {
+    border-color: #fff;
+}
