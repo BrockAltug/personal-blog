@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <title>My Blog - Posts</title>
+</head>
+<body>
+    <!-- Header section with light/dark mode toggle and Back button -->
+    <header class="header">
+        <button id="toggle-mode" class="btn">Light/Dark Mode</button>
+        <button id="back-btn" class="btn">New Post</button>
+        <button id="clear-posts-btn" class="btn">Clear All Posts</button>
+    </header>
+    
+    <!-- Main content area for displaying blog posts -->
+    <main id="posts-container">
+        <h1>Blog Posts</h1>
+        <!-- Blog posts will be dynamically inserted here -->
+        <div id="posts-list"></div>
+    </main>
+    
+    <!-- Footer with a link to the developer's portfolio -->
+    <footer class="footer">
+        <p>&copy; 2024 Brock Altug. All rights reserved.</p>
+        <a href="https://github.com/BrockAltug" class="btn">My Portfolio</a>
+    </footer>
+
+    <!-- JavaScript files for handling page functionalities -->
+    <script src="assets/js/logic.js"></script>
+    <script src="assets/js/blog.js"></script>
+</body>
+</html>

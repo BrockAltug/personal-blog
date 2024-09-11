@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <title>My Blog - Create Post</title>
+</head>
+<body>
+    <!-- Header section with light/dark mode toggle and New Post button -->
+    <header class="header">
+        <button id="toggle-mode" class="btn">Light/Dark Mode</button>
+        <a href="blog.html" class="btn">View Posts</a>
+    </header>
+
+    <!-- Main content area for the form -->
+    <main class="main-content">
+        <h1>Create a New Blog Post</h1>
+        <form id="blog-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="title">Blog Title:</label>
+                <input type="text" id="title" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="content">Content:</label>
+                <textarea id="content" class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer with a link to the developer's portfolio -->
+    <footer class="footer">
+        <p>&copy; 2024 Brock Altug. All rights reserved.</p>
+        <a href="https://github.com/BrockAltug" class="btn"> My Portfolio</a>
+    </footer>
+
+    <!-- JavaScript file for handling form submission -->
+    <script src="assets/js/logic.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+</html>
