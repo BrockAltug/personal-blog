@@ -59,3 +59,5 @@ Personal Blog is a web-based application that provides a user-friendly interface
 ## Summary
 
 Web-based application for users to create and manage their own blog posts. Built with HTML, CSS, and JavaScript, it features post creation, dynamic rendering, light/dark mode toggle, and data persistence using localStorage to provide a seamless user experience.
+
+https://brockaltug.github.io/personal-blog/
